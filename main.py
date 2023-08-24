@@ -15,6 +15,7 @@ app = FastAPI()
 
 # Модель данных для задачи
 class Task(BaseModel):
+    id: int
     title: str
     description: str
     status: bool
